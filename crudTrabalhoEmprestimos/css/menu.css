@@ -1,0 +1,70 @@
+/* Estilos para o menu de navegação */
+.navbar {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #34495e;
+}
+
+.navbar a.logout-btn {
+    float: right;
+}
+
+/* Responsividade para o menu */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .navbar a.logout-btn {
+        float: none;
+    }
+}
+
+        /* Estilo para a seta de voltar (como solicitado anteriormente) */
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #6c757d;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            margin: 1rem;
+        }
+
+        .back-button::before {
+            content: "←";
+            margin-right: 8px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .back-button:hover::before {
+            transform: translateX(-3px);
+        }
